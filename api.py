@@ -9,9 +9,10 @@ app = flask.Flask(__name__)
 
 @app.route('/', methods=["get"])
 def home():
-    try:
+    return "Hello"
+    '''try:
         key = int(request.args['id'])
 
         return "I thought of an example and it was a " + key['thing']
     except KeyError:
-        return "Bad"
+        return "Bad"'''
