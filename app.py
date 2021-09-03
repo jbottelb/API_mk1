@@ -14,6 +14,15 @@ app = flask.Flask(__name__)
 def index():
     return "Hello"
 
+@app.route('/blog/sendmessage/')
+def messages(data):
+    try:
+        name = request.form["name"]
+        message = request.form["message"]
+        print(name, message)
+        return "Sucess"
+    except Exception as e:
+        return "Failure"
 
 @app.route('/blog', methods=["get"])
 def messages():
