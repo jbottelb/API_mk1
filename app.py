@@ -3,8 +3,10 @@ import flask
 from flask import Flask
 from flask import request
 import json
-app = flask.Flask(__name__)
+from flask_cors import CORS
 
+app = flask.Flask(__name__)
+CORS(app)
 '''
 index, used mostly to test a connection to the API
 '''
