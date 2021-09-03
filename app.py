@@ -13,5 +13,5 @@ def home():
 
 
 @app.route('/blog', methods=["get"])
-def home():
+def messages():
     return ["messages", "more messages"]
