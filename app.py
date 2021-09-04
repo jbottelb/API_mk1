@@ -12,7 +12,7 @@ index, used mostly to test a connection to the API
 '''
 @app.route('/', methods=["get"])
 def index():
-    return "Hello, this is PhyAPI"
+    return "Hello, this is PhyAPI. My documentation will be up soon. "
 
 '''
 Sends a messages and stores it in a tsv file (people may want to use commas)
